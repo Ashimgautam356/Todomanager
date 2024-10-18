@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Roboto Slab';
+}
+body{
+    
+    background-color: rgb(11, 9, 37);
+}
+nav{
+    position:sticky;
+    transform: translate(50%);
+    width: 50vw;
+    height: 4rem;
+    background-color: rgba(137, 136, 185, 0.457);
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 0 2rem;
+
+
+}
+
+nav .logo-div a{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+nav .logo-div img{
+    color: white;
+    object-fit: cover;
+}
+nav .nav-links a{
+    border: 1px solid white;
+    padding: 4px;
+    border-radius: 5px;
+    background-color: green;
+    text-decoration: none;
+    color: whitesmoke;
+
+}
+
+
+section{
+    height: 80vh;
+    width: 100vw;
+    color: whitesmoke;
+    display: flex;
+    margin-top: 2rem ;
+}
+
+section .navPortion{
+    width: 25%;
+    display:  flex;
+    height: 100%;
+    flex-direction: column;
+    border-right:1px solid white;
+
+
+}
+
+section .navPortion .topPortion{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+section .navPortion .topPortion li{
+    height: 3rem;
+    width: 90% ;
+    list-style:  none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: background-color 0.5s ;
+    border-radius: 5px;
+    
+}
+
+section .navPortion .topPortion li:hover{
+    background-color: rgba(154, 150, 150, 0.244);
+}
+section .navPortion .mainPortion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    margin-top: 2rem;
+}
+section .navPortion .mainPortion li{
+    width: 90%;
+    list-style:  none;
+    cursor: pointer;
+    height: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    transition: background-color 0.5s ;
+    border-radius: 5px;
+}
+
+section .navPortion .mainPortion li:hover{
+    background-color: rgba(154, 150, 150, 0.244);
+
+}
+section .fieldPortion{
+    width: 70%;
+}
+section .fieldPortion .addTodo {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section .fieldPortion .addTodo .addTodo-Header h1{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+section .fieldPortion .addTodo .addTodo-Body{
+    margin-top: 5rem;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+section .fieldPortion .addTodo .addTodo-Body label{
+    font-size: 1.5rem;
+}
+
+section .fieldPortion .addTodo .addTodo-Body .titleImp{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+section .fieldPortion .addTodo .addTodo-Body .titleImp input{
+    width: 50%;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding: 2px 2px 2px 6px;
+    border: none;
+    outline:none;
+    border-radius: 5px;
+}
+
+section .fieldPortion .addTodo .addTodo-Body .discriptionSec {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+section .fieldPortion .addTodo .addTodo-Body .discriptionSec textarea{
+    min-width: 50%;
+    min-height: 5rem;
+    font-size: 1.5rem;
+    padding: 2px 2px 2px 6px;
+    border: none;
+    outline:none;
+    border-radius: 5px;
+}
+
+section .fieldPortion .addTodo .addTodo-Body .details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2.5rem;
+
+}
+section .fieldPortion .addTodo .addTodo-Body .details .bx{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+
+}
+
+section .fieldPortion .addTodo .addTodo-Body .details input{
+    width: 50%;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding: 2px 2px 2px 6px;
+    border: none;
+    outline:none;
+    border-radius: 5px;
+
+}
+
+section .fieldPortion .addTodo button{
+    margin-top: 5rem;
+    height: 3rem;
+    width: 10rem;
+    font-size: 1.5rem;
+    border: 1px solid rgb(95, 232, 82);
+    background-color: rgb(95, 232, 82);
+    color: whitesmoke;
+    font-weight: 800;
+    border-radius: 5px;
+    box-shadow: 4px 8px 40px 4px rgb(95, 236, 30) ;
+    cursor: pointer;
+}
+
+/*  */
+section .fieldPortion .todayTasks{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left:2rem;
+}
+section .fieldPortion .todayTasks .title{
+    font-size: 2.5rem;
+    text-align: center;
+}
+section .fieldPortion .todayTasks .inner-todayTasks{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+section .fieldPortion .todayTasks .inner-todayTasks .outerDiv{
+    border: 1px solid white;
+    border-radius: 5px;
+    height: 15rem;
+    width: 40%;
+    display: flex;
+    /* margin-right: 5rem; */
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: rgba(80, 86, 84, 0.559);
+    padding: 20px;
+
+
+}
+section .fieldPortion .todayTasks .inner-todayTasks .outerDiv .innerDiv{
+    width: 100%;
+}
+section .fieldPortion .todayTasks .inner-todayTasks .outerDiv .innerDiv p{
+    margin-top: 1rem;
+    font-size: 1rem;
+    color: rgb(145, 147, 142);
+}
+section .fieldPortion .todayTasks .inner-todayTasks .outerDiv .buttonDiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    /* margin-top: 1.25rem; */
+    height: 3rem;
+}
+
+section .fieldPortion .todayTasks .inner-todayTasks .outerDiv .buttonDiv button{
+    width: 8rem;
+    height: 2rem;
+    font-size: 1.25rem;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    
+}
+section .fieldPortion .todayTasks .inner-todayTasks .outerDiv #delt{
+    background-color: rgb(185, 12, 12);
+    box-shadow: 4px 8px 40px 4px rgb(236, 30, 30) ;
+}
+
+section .fieldPortion .todayTasks .inner-todayTasks .outerDiv #don{
+    background-color: rgb(34, 226, 47);
+    box-shadow: 4px 8px 40px 4px rgb(30, 236, 30) ;
+}
+
+
+
+
+
+
+

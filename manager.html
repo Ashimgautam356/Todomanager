@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manager</title>
+    <link rel="stylesheet" href="./magaerStyle.css">
+    <script defer src="./app.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo-div">
+            <a href="./index.html">
+                <img src="https://img.icons8.com/clouds/50/manager.png" alt="logo">
+                <h1>Manager</h1>
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="./manager.html">Lets start </a>
+        </div>
+    </nav>
+
+    <section>
+        <div class="navPortion">
+            <div class="topPortion">
+                <li>
+                    <img height="30" width="30" src="https://img.icons8.com/office/40/manager.png" alt="sampleImge">
+                    <span>User</span>
+                </li>
+            </div>
+
+            <div class="mainPortion">
+                <li onclick="showhtml(addTodoHtml)">
+                    <img height="30" width="30"  src="https://img.icons8.com/clouds/50/add.png" alt="addTask">
+                    <span>Add task</span>
+                </li>
+                <li onclick="showhtml(allHtml)">
+                    <img height="30" width="30" src="https://img.icons8.com/clouds/50/all.png" alt="showAll">
+                    <span>Show All</span>
+                </li>
+                <li onclick="showhtml(todayHtml)">
+                    <img height="30" width="30" src="https://img.icons8.com/clouds/50/today.png" alt="today">
+                    <span>To Complete Today</span>
+                </li>
+                <li onclick="showhtml(upcomingHtml)">
+                    <img width="30" height="30" src="https://img.icons8.com/clouds/50/tomorrow.png" alt="upcoming">
+                    <span>Takes more than a day</span>
+                </li>
+                <li onclick="showhtml(completedHtml)">
+                    <img width="20" height="20" src="https://img.icons8.com/pulsar-gradient/48/task-completed.png" alt="compeleted">
+                    <span>Completed</span>
+                </li>
+            </div>
+        </div>
+        <div class="fieldPortion" id="field">
+        </div>
+    </section>
+
+
+</body>
+</html>
